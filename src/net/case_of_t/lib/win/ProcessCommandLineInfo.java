@@ -7,32 +7,32 @@ import static java.lang.Integer.parseInt;
 public class ProcessCommandLineInfo {
 
     public String getCommandLine() {
-        return CommandLine;
+        return commandLine;
     }
 
     public void setCommandLine(String commandLine) {
-        CommandLine = commandLine;
+        this.commandLine = commandLine;
     }
 
     public String getName() {
-        return Name;
+        return name;
     }
 
     public void setName(String name) {
-        Name = name;
+        this.name = name;
     }
 
     public int getProcessId() {
-        return ProcessId;
+        return processId;
     }
 
     public void setProcessId(int processId) {
-        ProcessId = processId;
+        this.processId = processId;
     }
 
-    private String CommandLine;
-    private String Name;
-    private int ProcessId;
+    private String commandLine;
+    private String name;
+    private int processId;
 
     public boolean applyField(String fieldName, String value){
         try{
